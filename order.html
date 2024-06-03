@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <header>
+            <h1>Glamorize</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="beauty.html">美妝產品</a></li>
+                    <li><a href="order.html">訂單</a></li>
+                    <li><a href="advantage.html">優缺點</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>意見反饋與訂單表單</title>
+</head>
+<body>
+    <h1>意見反饋與訂單表單</h1>
+    
+    <h2>意見反饋表單：</h2>
+    <form action="/submit_feedback" method="post">
+        <label for="feedback">請輸入您的意見：</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="提交意見">
+    </form>
+
+    <h2>訂單表單：</h2>
+    <form action="/submit_order" method="post">
+        <label for="product">選擇商品：</label>
+        <select id="product" name="product">
+            <option value="產品1">產品1</option>
+        </select><br><br>
+        <label for="quantity">數量：</label>
+        <input type="number" id="quantity" name="quantity" min="1"><br><br>
+        <label for="fullname">姓名：</label>
+        <input type="text" id="fullname" name="fullname"><br><br>
+        <label for="email">電子郵件：</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="address">送貨地址：</label><br>
+        <textarea id="address" name="address" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="提交訂單">
+    </form>
+</body>
+</html>
